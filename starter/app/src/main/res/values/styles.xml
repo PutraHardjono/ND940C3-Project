@@ -17,4 +17,12 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="TextAppearance.Label" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.Value" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
 </resources>

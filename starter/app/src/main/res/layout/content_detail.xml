@@ -8,4 +8,60 @@
     tools:context=".DetailActivity"
     tools:showIn="@layout/activity_detail">
 
+    <TextView
+        android:id="@+id/text_filename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/file_name"
+        android:textAppearance="@style/TextAppearance.Label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/download_filename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="16dp"
+        tools:text="Glide - Image Loading Library by BumpTech"
+        android:textAppearance="@style/TextAppearance.Value"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_filename"
+        app:layout_constraintTop_toTopOf="@+id/text_filename" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/status"
+        android:textAppearance="@style/TextAppearance.Label"
+        app:layout_constraintStart_toStartOf="@+id/text_filename"
+        app:layout_constraintTop_toBottomOf="@+id/download_filename" />
+
+    <TextView
+        android:id="@+id/download_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Value"
+        tools:text="Success"
+        app:layout_constraintEnd_toEndOf="@+id/download_filename"
+        app:layout_constraintStart_toStartOf="@+id/download_filename"
+        app:layout_constraintTop_toTopOf="@+id/text_status" />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/ok"
+        style="@style/Widget.AppCompat.Button.Colored"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
