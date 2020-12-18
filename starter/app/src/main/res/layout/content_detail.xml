@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    app:layoutDescription="@xml/content_detail_scene"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".DetailActivity"
     tools:showIn="@layout/activity_detail">
@@ -25,11 +26,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="16dp"
-        tools:text="Glide - Image Loading Library by BumpTech"
         android:textAppearance="@style/TextAppearance.Value"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text_filename"
-        app:layout_constraintTop_toTopOf="@+id/text_filename" />
+        app:layout_constraintTop_toTopOf="@+id/text_filename"
+        tools:text="Glide - Image Loading Library by BumpTech" />
 
     <TextView
         android:id="@+id/text_status"
@@ -46,22 +47,22 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAppearance="@style/TextAppearance.Value"
-        tools:text="Success"
         app:layout_constraintEnd_toEndOf="@+id/download_filename"
         app:layout_constraintStart_toStartOf="@+id/download_filename"
-        app:layout_constraintTop_toTopOf="@+id/text_status" />
+        app:layout_constraintTop_toTopOf="@+id/text_status"
+        tools:text="Success" />
 
     <Button
         android:id="@+id/button_ok"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/ok"
-        style="@style/Widget.AppCompat.Button.Colored"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.motion.widget.MotionLayout>
